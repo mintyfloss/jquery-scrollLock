@@ -57,7 +57,6 @@
       this.$element.on('touchmove' + ScrollLock.NAMESPACE, this.options.selector, $.proxy(ScrollLock.CORE.handler, this))
       
       if (this.options.unblock) {
-        this.$element.on('touchstart' + ScrollLock.NAMESPACE, this.options.unblock, $.proxy(ScrollLock.CORE.unblockHandler, this))
         this.$element.on('touchmove' + ScrollLock.NAMESPACE, this.options.unblock, $.proxy(ScrollLock.CORE.unblockHandler, this))
       }
     }
